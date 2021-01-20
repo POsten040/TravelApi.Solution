@@ -1,0 +1,14 @@
+<h1>Reviews and their reviewers</h1>
+
+<ol>
+@foreach (Review review in Model)
+{
+  <ul>
+    <li>ID: @review.ReviewId</li>
+    <li>Body: @review.Body</li>
+    <li>Reviewed By: @review.UserName</li>
+  </ul>
+  <a href="/Reviews/Details/@(review.ReviewId)"><p>View Reviews by Writer</p></a>  
+  <br>
+}
+</ol>

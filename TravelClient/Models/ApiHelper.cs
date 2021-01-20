@@ -8,7 +8,7 @@ namespace TravelClient.Models
     public static async Task<string> GetAll()
     {
       RestClient client = new RestClient("http://localhost:5000/api");
-      RestRequest request = new RestRequest($"locations", Methodas.Get);
+      RestRequest request = new RestRequest($"locations", Method.GET);
       var response = await client.ExecuteTaskAsync(request);
       return response.Content;
     }

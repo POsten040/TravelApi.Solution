@@ -6,12 +6,12 @@ using TravelClient.Models;
 
 namespace TravelClient.Controllers
 {
-  public class LocationsController : Controller
+  public class ReviewsController : Controller
   {
     public IActionResult Index()
     {
-      var allLocations = Location.GetLocations();
-      return View(allLocations);
+      var allReviews = Review.GetReviews();
+      return View(allReviews);
     }
   }
 }
