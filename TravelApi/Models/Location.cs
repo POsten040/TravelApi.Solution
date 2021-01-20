@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TravelApi 
+namespace TravelApi.Models
 {
     public class Location
     {

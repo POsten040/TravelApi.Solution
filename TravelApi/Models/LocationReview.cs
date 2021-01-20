@@ -1,4 +1,4 @@
-namespace TravelApi
+namespace TravelApi.Models
 {
   public class LocationReview
   {
