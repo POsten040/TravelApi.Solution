@@ -17,7 +17,7 @@ namespace TravelApi.Services
     IEnumerable<User> GetAll();
   }
 
-  public class userService : IUserService
+  public class UserService : IUserService
   {
     private List<User> _users = new List<User>
     {
@@ -26,7 +26,7 @@ namespace TravelApi.Services
 
     private readonly AppSettings _appSettings;
 
-    public userService(IOptions<AppSettings> appSettings)
+    public UserService(IOptions<AppSettings> appSettings)
     {
       _appSettings = appSettings.Value;
     }
