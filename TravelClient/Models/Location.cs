@@ -21,7 +21,7 @@ namespace TravelClient.Models
         {
             var apiCallTask = ApiHelper.GetAll();
             var result = apiCallTask.Result;
-            
+
             JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
             List<Location> locationList = JsonConvert.DeserializeObject<List<Location>>(jsonResponse.ToString());
 
